@@ -1,0 +1,40 @@
+{
+  "name": "Binanace Spot/Future Alert System",
+  "description": "Binanace Spot/Future get Alert on telegram when any pair changes X% in Y timeframe for last Z candlesticks",
+  "repository": "https://github.com/aryanPi/scapper-pi",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": [
+    "CryptocurrencyAlertingBot",
+    "bot",
+    "telegram",
+    "telegram scraping",
+    "crypto",
+    "new stocks",
+    "binanace",
+    "binanace spot",
+    "binanace future",
+    "binanace alert"
+  ],
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Token of your bot which has access to messages",
+      "value": "",
+      "required": true
+    },
+    "API_KEY": {
+      "description": "API_KEY of binance",
+      "value": "",
+      "required": true
+    },
+    "API_SECRET": {
+      "description": "APISECRET key of binance",
+      "value": "",
+      "required": true
+    },
+    "TELEGRAM_GROUPID": {
+      "description": "Telegram group chat_id where you will get alerts (get it from @TGIdsBot on telegram)",
+      "value": "",
+      "required": true
+    }
+  }
+}

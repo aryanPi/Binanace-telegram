@@ -1,0 +1,209 @@
+body,html,*{
+     font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    padding: 32px;
+    font-size: 1.2rem;
+    background: rgba(223, 223, 223, 0.575);}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.table{
+    width: 50vw;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 7px;
+    background: rgba(255, 255, 255, 0.904);
+    padding-bottom: 10px;
+}
+.table-head{
+    display: flex;
+    flex-direction: row;
+    background-color: grey;
+    color: white;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.table-content{
+margin-top: 10px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.col{
+    width: 100%;
+    text-align: center;
+}
+.btn{
+    border: none;
+    padding: 5px;
+    width: 50px;
+    margin: 0 5px 5px 5px;
+    color: white;
+    cursor: pointer;
+    opacity: 0.85;
+}
+.btn:hover{
+    opacity: 1;
+}
+.btn-danger{
+    background: #e53935;
+    color: white;
+}
+.btn-warning{
+    background: #ef6c00;
+}
+
+.fab-btn{
+    cursor: pointer;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    text-align: center;
+    border: 0;
+    background: #388e3c;
+    color: white;
+    font-size: large;
+    font-size: 30px;
+}
+
+
+.dialog{
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog-body ,.con-1,.con-2 {
+    
+    background: rgb(204, 204, 204);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 7px;
+}
+
+.p-2{
+        padding: 20px;
+}
+.dialog-body{
+    z-index: 1;
+}
+.dialog-body > *,.con-1 > *,.con-2 > *{
+    margin: 5px;
+}
+.inp{
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 7px;
+    font-size: 1.2rem;
+}
+select{
+    width: 95%;
+    height: 2.2rem;
+    border-radius: 7px;
+}
+.btn-sucess{
+    background: yellowgreen;
+}
+.btn-container{
+    width: 100%;
+}
+.btn-container > *{
+    width: 45%;
+    height: 30px;
+    border-radius: 7px;
+}
+:root{
+    --bg-blur: 0px;
+}
+
+body > *:not(.dialog) {
+  filter: blur(var(--bg-blur));
+  transition: filter 0.2s;
+}
+
+
+.fade-in {
+  animation: fade_in 0.2s linear;
+}
+
+.fade-out {
+  animation: fade_out 0.2s linear;
+}
+@keyframes fade_in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade_out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.table-sm{
+    max-height: 500px;
+    overflow-y: auto;
+    width: 100%;
+    width: 500px;
+    font-size: smaller;
+}   
+
+.row:nth-child(even){
+    background: #9f9f9f;
+}
+.row{
+    height: 29px;
+    display: flex;
+    align-items: center;
+}
+
+.list-modal.row.col{
+    text-align: start;
+}
+
+.hide-2{
+    display: none;
+}
+
+[type='checkbox']{
+    transform: scale(2);
+    margin: 0 20px;
+}
+.inp-error{
+    border: 1px solid red;
+}
+
+.btn-sm{
+    width: 20%;
+}
